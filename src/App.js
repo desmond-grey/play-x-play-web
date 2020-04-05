@@ -6,10 +6,10 @@ function App() {
     return (
         <div className="App row vh-100">
             <div className="col align-self-center">
-                foo
+                Player 1
             </div>
             <div className="col align-self-center">
-                bar
+                Player 2
             </div>
         </div>
     );
