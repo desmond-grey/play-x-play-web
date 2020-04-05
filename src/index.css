@@ -1,15 +1,15 @@
 body {
-  height: 100%;
+  /* Background image */
+  background-image: url(./ping-pong-table-overvhead.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  text-align: center;
 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body #react-root {
+  height: 100%;
 }
