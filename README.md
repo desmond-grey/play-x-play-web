@@ -1,4 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Play x Play ReactJS Webapp
+
+## Running the app for development
+
+When running the app locally using `npm start`...
+
+### Disable CORS in your browser
+To do this for Chrome Canary, for example...
+
+`open -a Google\ Chrome\ Canary --args --user-data-dir="/tmp/canary" --disable-web-security`
+
+
+### Run via port that doesn't compete with Server
+You're probably also running the server on the same system you're running the webapp-server.
+
+To avoid port conflicts, set the port when you start the webapp-server...
+
+`BROWSER="google chrome canary" PORT=4000 npm start`
+
+
 
 ## Available Scripts
 
