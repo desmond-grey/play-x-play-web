@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Player from './Player';
 
 import './App.css';
 
@@ -65,15 +66,6 @@ function throwErrorIfResponseIsNotOk(response) {
         throw Error(response.statusText);
     }
     return response;
-}
-
-function Player(props) {
-    return (
-        <div>
-            <h1>{props.pointsScored}</h1>
-            <h2>{props.playerId}</h2>
-        </div>
-    );
 }
 
 export default App;
