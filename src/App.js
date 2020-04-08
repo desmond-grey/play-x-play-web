@@ -36,6 +36,7 @@ class App extends Component {
                         <Player
                             pointsScored={this.state.gameState.players[0].pointsScored}
                             playerId={this.state.gameState.players[0].id}
+                            hasServe={this.state.gameState.players[0].hasServe}
                         />
                     }
                 </div>
@@ -44,6 +45,7 @@ class App extends Component {
                         <Player
                             pointsScored={this.state.gameState.players[1].pointsScored}
                             playerId={this.state.gameState.players[1].id}
+                            hasServe={this.state.gameState.players[1].hasServe}
                         />
                     }
                 </div>
