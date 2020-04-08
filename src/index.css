@@ -1,15 +1,9 @@
 body {
-  /* Background image */
-  background-image: url(./ping-pong-table-overvhead.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  text-align: center;
-
   margin: 0;
+  height: 100%;
+  text-align: center;
 }
 
-body #react-root {
+#react-root {
   height: 100%;
 }
