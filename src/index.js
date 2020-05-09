@@ -17,7 +17,7 @@ render((
             <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/table">
+            <Route path="/table/:tableId">
                 <Table />
             </Route>
         </Switch>
