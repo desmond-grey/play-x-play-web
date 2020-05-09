@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import Player from './Player';
+import Navbar from '../Navbar/Navbar';
+import Player from '../Player/Player';
 
-import './App.css';
+import './Table.css';
 
-class App extends Component {
+class Table extends Component {
     constructor(props) {
         super(props);
 
@@ -30,26 +31,29 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App row vh-100">
-                <div className="col align-self-center">
-                    {this.state.gameState &&
-                        <Player
-                            pointsScored={this.state.gameState.players[0].pointsScored}
-                            playerId={this.state.gameState.players[0].id}
-                            hasServe={this.state.gameState.players[0].hasServe}
-                        />
-                    }
+            <>
+                <Navbar/>
+                <div className="row flex-fill d-flex justify-content-start pxp-background-table-image">
+                    <div className="col align-self-center d-flex justify-content-center">
+                        {this.state.gameState &&
+                            <Player
+                                pointsScored={this.state.gameState.players[0].pointsScored}
+                                playerId={this.state.gameState.players[0].id}
+                                hasServe={this.state.gameState.players[0].hasServe}
+                            />
+                        }
+                    </div>
+                    <div className="col align-self-center d-flex justify-content-center">
+                        {this.state.gameState &&
+                            <Player
+                                pointsScored={this.state.gameState.players[1].pointsScored}
+                                playerId={this.state.gameState.players[1].id}
+                                hasServe={this.state.gameState.players[1].hasServe}
+                            />
+                        }
+                    </div>
                 </div>
-                <div className="col align-self-center">
-                    {this.state.gameState &&
-                        <Player
-                            pointsScored={this.state.gameState.players[1].pointsScored}
-                            playerId={this.state.gameState.players[1].id}
-                            hasServe={this.state.gameState.players[1].hasServe}
-                        />
-                    }
-                </div>
-            </div>
+            </>
         );
     }
 
@@ -70,4 +74,4 @@ function throwErrorIfResponseIsNotOk(response) {
     return response;
 }
 
-export default App;
+export default Table;

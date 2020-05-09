@@ -1,0 +1,11 @@
+.Table {
+}
+
+/* Background image */
+.pxp-background-table-image {
+    background-image: url(./ping-pong-table-overvhead.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 25px solid #FFFFFF;         /* hack to give background image an inset margin.  see: https://stackoverflow.com/questions/7961589/positioning-background-image-adding-padding*/
+}
