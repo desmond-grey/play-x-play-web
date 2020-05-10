@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Player.css';
-import hasServeImage from './has_serve.png';
+import pingPongPaddle from './ping-pong_paddle.svg';
 
 
 function Player(props) {
@@ -12,7 +12,7 @@ function Player(props) {
                 <h4 className="card-subtitle">{props.playerId}</h4>
 
                 {props.hasServe &&
-                    <img id="has-serve-image" src={hasServeImage} alt="hasServe" />
+                    <img id="has-serve-image" src={pingPongPaddle} alt="hasServe" />
                 }
             </div>
         </div>

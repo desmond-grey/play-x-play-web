@@ -2,5 +2,10 @@
 }
 
 #has-serve-image {
-    height: 2em;
+    height: 3em;
+
+    /* position at lower right of container div */
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
 }
