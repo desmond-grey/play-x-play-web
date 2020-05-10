@@ -13,8 +13,8 @@ class Table extends Component {
         const { tableId } = this.props.match.params;    // can't use the "useParams" hook within a class.  So we extract router params this way
 
         this.POLLING_INTERVAL_MILLIS = 1000;
-        this.PXP_GAME_STATUS_ENDPOINT = `http://172.16.0.16:3000/ping-pong/tables/${tableId}/game`;
-//        this.PXP_GAME_STATUS_ENDPOINT = 'http://ec2-35-166-35-105.us-west-2.compute.amazonaws.com:3000/ping-pong/tables/${tableId}/game';
+        this.PXP_GAME_STATUS_ENDPOINT = `http://172.16.0.16:3000/api/ping-pong/tables/${tableId}/game`;
+//        this.PXP_GAME_STATUS_ENDPOINT = 'http://ec2-35-166-35-105.us-west-2.compute.amazonaws.com:3000/api/ping-pong/tables/${tableId}/game';
         this.pollingInterval = null;
 
         this.state = {
